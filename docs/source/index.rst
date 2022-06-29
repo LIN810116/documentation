@@ -7,6 +7,7 @@ Welcome to the ABI CTT Group Documentation!
    :caption: Contents:
 
    introduction
+   pacs/index
 
 
 Indices and tables
