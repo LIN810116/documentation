@@ -1,0 +1,5 @@
+parameterized
+sphinx-copybutton
+sphinx-jsonschema
+nbsphinx
+nbsphinx-link
