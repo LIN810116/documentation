@@ -7,7 +7,7 @@ There are many PACS system available online such as `Orthanc <https://www.orthan
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Contents:
 
    orthanc
