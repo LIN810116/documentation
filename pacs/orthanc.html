@@ -1,0 +1,432 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Orthanc &mdash; abi-ctt-documentation  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/copybutton.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+
+  
+  
+    <link rel="shortcut icon" href="../_static/abi-logo.png"/>
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/language_data.js"></script>
+        <script src="../_static/clipboard.min.js"></script>
+        <script src="../_static/copybutton.js"></script>
+        <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="PYPACS: Python API for accessing a PACS" href="pypacs.html" />
+    <link rel="prev" title="PACS" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home" alt="Documentation Home"> abi-ctt-documentation
+          
+
+          
+            
+            <img src="../_static/abi-vc-rgb.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">PACS</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Orthanc</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#installation">Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uploading-files">Uploading files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#uploading-through-the-dicom-protocol-recommended">Uploading through the DICOM protocol(recommended)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uploading-through-web-browser-drag-and-drop">Uploading through web browser (drag and drop)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#troubleshooting">Troubleshooting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#where-to-find-the-log-file">Where to find the log file?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#where-to-find-the-configuration-files">Where to find the configuration files?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#failed-to-restart-orthanc-after-adding-the-osimis-viewer">Failed to restart Orthanc after adding the osimis viewer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#how-does-orthanc-store-its-database">How does Orthanc store its database?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pypacs.html">PYPACS: Python API for accessing a PACS</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">abi-ctt-documentation</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="index.html">PACS</a> &raquo;</li>
+        
+      <li>Orthanc</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/pacs/orthanc.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  
+<style>
+/* CSS overrides for sphinx_rtd_theme */
+
+/* 24px margin */
+.nbinput.nblast.container,
+.nboutput.nblast.container {
+    margin-bottom: 19px;  /* padding has already 5px */
+}
+
+/* ... except between code cells! */
+.nblast.container + .nbinput.container {
+    margin-top: -19px;
+}
+
+.admonition > p:before {
+    margin-right: 4px;  /* make room for the exclamation icon */
+}
+
+/* Fix math alignment, see https://github.com/rtfd/sphinx_rtd_theme/pull/686 */
+.math {
+    text-align: unset;
+}
+</style>
+<div class="section" id="orthanc">
+<h1>Orthanc<a class="headerlink" href="#orthanc" title="Permalink to this headline">¶</a></h1>
+<p>A open source lightweight DICOM server. It has a a plugin mechanism to add modules. see its <a class="reference external" href="https://www.orthanc-server.com/static.php?page=about">official page</a> for more information.</p>
+<div class="section" id="installation">
+<h2>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p>Update update package repositories.</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get update -y
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Install the packages and dependencies.</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install -y orthanc
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Now, orthanc is installed. Go to <a class="reference external" href="http://localhost:8042/app/explorer.html">http://localhost:8042/app/explorer.html</a>, where port number is defined by your configuration (the default http port of orthanc is <code class="docutils literal notranslate"><span class="pre">8042</span></code>).</p></li>
+<li><p>Install plugins</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>DICOMweb: provide support of the DICOM web standard.</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install -y orthanc-dicomweb
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Orthanc Web Viewer: provide a web viewer of medical images.</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt install orthanc-webviewer
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Osimis Web Viewer: an advanced image viewer</p>
+<blockquote>
+<div><ul>
+<li><p>Option 1: Install &amp; set up locally. See <a class="reference external" href="https://book.orthanc-server.com/plugins/osimis-webviewer.html#how-to-get-it">here</a> for more information.</p>
+<blockquote>
+<div><ul>
+<li><p>Download the LSB (Linux Standard Base) binaries. <a class="reference external" href="http://orthanc.osimis.io/lsb/plugin-osimis-webviewer/releases/1.3.1/libOsimisWebViewer.so">Download</a>.</p></li>
+<li><p>Move/copy the .so file to /usr/share/orthanc/plugins.</p></li>
+<li><p>Restart Orthanc</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo /etc/init.d/orthanc restart --verbose
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Go to <a class="reference external" href="http://localhost:8042/app/explorer.html">http://localhost:8042/app/explorer.html</a></p></li>
+<li><p>Default username is orthanc and password is orthanc</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Option 2: Setup using docker image (need to have Docker installed). See <a class="reference external" href="https://osimis.atlassian.net/wiki/spaces/OKB/pages/79167642/Osimis+Web+Viewer+-+Installation+guide">Osimis Installation guide</a> or <a class="reference external" href="https://osimis.atlassian.net/wiki/spaces/OKB/pages/26738689/How+to+use+osimis+orthanc+Docker+images#Howtouseosimis/orthancDockerimages?-Quickstart">Osimis Quickstart</a> for more information.</p>
+<blockquote>
+<div><ul>
+<li><p>run</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo docker run -p <span class="m">8042</span>:8042 -p <span class="m">4242</span>:4242 -e <span class="nv">WVB_ENABLED</span><span class="o">=</span><span class="nb">true</span> -v /home/username/orthanc-storage:/var/lib/orthanc/db osimis/orthanc
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+<li><p>Go to <a class="reference external" href="http://localhost:8042">http://localhost:8042</a></p></li>
+<li><p>Default username is <code class="docutils literal notranslate"><span class="pre">orthanc</span></code> and password is <code class="docutils literal notranslate"><span class="pre">orthanc</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The basic Orthanc Web Viewer can only access images from series level, while Osimis can access images from study and series levels. They can coexist.</p>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>(optional) Change configurations</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Create a configuration file if it does not exist.</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo Orthanc --config<span class="o">=</span>/etc/orthanc/configuration.json
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Where /etc/orthanc/ is the folder stored the Orthanc main configuration and plugin configurations.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Modify the related configuration file and fields.</p></li>
+<li><p>Restart Orthanc</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo /etc/init.d/orthanc restart --verbose
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+</div>
+<div class="section" id="uploading-files">
+<h2>Uploading files<a class="headerlink" href="#uploading-files" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="uploading-through-the-dicom-protocol-recommended">
+<h3>Uploading through the DICOM protocol(recommended)<a class="headerlink" href="#uploading-through-the-dicom-protocol-recommended" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p>Upload a directory</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo storescu -v IP <span class="m">4242</span> -aec ORTHANC --scan-directories /pathToDir
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Port number 4242 is Orthanc’s default dicom port.</p>
+</div>
+</div></blockquote>
+</li>
+<li><p>Upload a single dicom file</p>
+<blockquote>
+<div><div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo storescu -aec ORTHANC <span class="m">4242</span> /pathToDicomFile
+</pre></div>
+</div>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="uploading-through-web-browser-drag-and-drop">
+<h3>Uploading through web browser (drag and drop)<a class="headerlink" href="#uploading-through-web-browser-drag-and-drop" title="Permalink to this headline">¶</a></h3>
+<p>Files can also be upload via the web GUI from <a class="reference external" href="http://localhost:8042/app/explorer.html#upload">http://localhost:8042/app/explorer.html#upload</a></p>
+</div>
+</div>
+<div class="section" id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="where-to-find-the-log-file">
+<h3>Where to find the log file?<a class="headerlink" href="#where-to-find-the-log-file" title="Permalink to this headline">¶</a></h3>
+<p>Everytime the Orthanc service starts, it will generate a new log file in /var/log/orthanc/ for Linux or in C:Program FilesOrthanc ServerLogs for Windows.</p>
+</div>
+<div class="section" id="where-to-find-the-configuration-files">
+<h3>Where to find the configuration files?<a class="headerlink" href="#where-to-find-the-configuration-files" title="Permalink to this headline">¶</a></h3>
+<p>In /etc/orthanc/. You can run the command below to to create a orthanc main configuration file and attach to the orthanc server. Each plugin also has its own configuration file inside the folder.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo Orthanc --config<span class="o">=</span>/etc/orthanc/configuration.json
+</pre></div>
+</div>
+</div>
+<div class="section" id="failed-to-restart-orthanc-after-adding-the-osimis-viewer">
+<h3>Failed to restart Orthanc after adding the osimis viewer<a class="headerlink" href="#failed-to-restart-orthanc-after-adding-the-osimis-viewer" title="Permalink to this headline">¶</a></h3>
+<p>You might need to add the read permissions of the the .so file by:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>chmod o+r /usr/share/orthanc/plugins/libOsimisWebViewer.so
+</pre></div>
+</div>
+<p>If you start orthanc with –verbose parameter, you will be able to view the log in /var/log/orthanc/Orthanc.log</p>
+</div>
+<div class="section" id="how-does-orthanc-store-its-database">
+<h3>How does Orthanc store its database?<a class="headerlink" href="#how-does-orthanc-store-its-database" title="Permalink to this headline">¶</a></h3>
+<p>See <a class="reference external" href="https://book.orthanc-server.com/faq/orthanc-storage.html">https://book.orthanc-server.com/faq/orthanc-storage.html</a></p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pypacs.html" class="btn btn-neutral float-right" title="PYPACS: Python API for accessing a PACS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="PACS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2022, Chinchien Lin, Thiranja Prasad Babarenda Gamage
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
