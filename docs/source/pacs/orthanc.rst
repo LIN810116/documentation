@@ -49,7 +49,7 @@ Installation
             * Go to http://localhost:8042/app/explorer.html
             * Default username is orthanc and password is orthanc
 
-        * Option 2: Setup using docker image (need to install docker first. See  :ref:`How to install docker on Ubuntu 18`). See `Osimis Installation guide <https://osimis.atlassian.net/wiki/spaces/OKB/pages/79167642/Osimis+Web+Viewer+-+Installation+guide>`_ or `Osimis Quickstart <https://osimis.atlassian.net/wiki/spaces/OKB/pages/26738689/How+to+use+osimis+orthanc+Docker+images#Howtouseosimis/orthancDockerimages?-Quickstart>`_ for more information.
+        * Option 2: Setup using docker image (need to have Docker installed). See `Osimis Installation guide <https://osimis.atlassian.net/wiki/spaces/OKB/pages/79167642/Osimis+Web+Viewer+-+Installation+guide>`_ or `Osimis Quickstart <https://osimis.atlassian.net/wiki/spaces/OKB/pages/26738689/How+to+use+osimis+orthanc+Docker+images#Howtouseosimis/orthancDockerimages?-Quickstart>`_ for more information.
 
             * run
 
