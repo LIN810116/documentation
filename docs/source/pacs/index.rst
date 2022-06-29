@@ -11,3 +11,4 @@ There are many PACS system available online such as `Orthanc <https://www.orthan
    :caption: Contents:
 
    orthanc
+   pypacs
